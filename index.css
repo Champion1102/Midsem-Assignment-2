@@ -63,7 +63,7 @@ h3 {
   color: #FFF;
 }
 #job-container {
-  padding: 80px 20px 0 20px;
+  padding: 80px 150px 0 150px;
 }
 .job {
   border-radius: 10px;
@@ -73,6 +73,7 @@ h3 {
   background-color: #FFF;
   margin-bottom: 40px;
   box-shadow: 1px 1px 10px #aaa;
+
 }
 .job-description {
   flex: 2;
@@ -189,5 +190,110 @@ button,
   }
   #clear {
       display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  #search span p {
+    font-size: 13px;
+  }
+
+  #search span button {
+    font-size: 13px;
+  }
+
+  .job {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .job-description {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+  }
+
+  .img-container {
+    position: absolute;
+    top: -45px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .time-published li {
+    font-size: 13px;
+  }
+
+  .description {
+    padding-top: 10px;
+  }
+
+  .habilits {
+    padding-top: 20px;
+  }
+
+  #clear {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  #header-container {
+    height: 150px;
+  }
+
+  #container {
+    padding: 20px;
+  }
+
+  #search-container {
+    padding: 0 20px;
+    height: 60px;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #search {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  #clear {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: auto;
+  }
+
+  .job {
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .img-container {
+    top: -35px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .time-published li {
+    font-size: 12px;
+  }
+
+  .description {
+    padding-top: 10px;
+  }
+
+  .habilits {
+    padding-top: 15px;
   }
 }
